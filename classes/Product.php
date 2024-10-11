@@ -1,16 +1,18 @@
 <?php
-
+    require_once __DIR__ . "/Category.php";
     class Product{
         public $name;
         public $price;
-        public $type;
         public $imgUrl;
+        public Category $category;
+        public int $numberInStock;
 
-        public function __construct(string $name, float $price, string $type, string $imgUrl){
+        public function __construct(string $name, float $price, string $imgUrl, Category $category, int $numberInStock){
             $this->name = $name;
             $this->price = $price;
-            $this->type = $type;
             $this->imgUrl = $imgUrl;
+            $this->category = $category;
+            $this->numberInStock = $numberInStock;
         }
 
         public function getName(){
@@ -18,10 +20,13 @@
         } 
         public function getPrice(){
             return "Price: $this->price";
-        } 
-        public function getType(){
-            return "Type: $this->type";
-        } 
+        }
+        public function getImgUrl(){
+            return "ImgUrl: $this->imgUrl";
+        }
+        public function getNumInStock(){
+            return "Num in stock: $this->numberInStock";
+        }
     }
 
 ?>

@@ -1,12 +1,13 @@
 <?php
-
-    class Games{
+    require_once __DIR__ . "/Product.php";
+    class Games extends Product{
         public $material;
-        public $ageAnimal;
+        public $animalAge;
 
-        public function __construct(array $material, int $ageAnimal){
+        public function __construct(array $material, int $animalAge, string $name, float $price, string $imgUrl, Category $category, int $numberInStock){
             $this->material = $material;
-            $this->ageAnimal = $ageAnimal;
+            $this->animalAge = $animalAge;
+            parent::__construct($name, $price, $imgUrl, $category, $numberInStock);
         }
     }
 
