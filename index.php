@@ -18,6 +18,10 @@ Il cliente effettua il pagamento dei prodotti nel carrello con la carta di credi
 
 <?php
 require_once __DIR__ . "/classes/Product.php";
+require_once __DIR__ . "/classes/Game.php";
+require_once __DIR__ . "/classes/Food.php";
+require_once __DIR__ . "/classes/Kennel.php";
+require_once __DIR__ . "/classes/Category.php";
 // new Products("croccantini", 9.89, "cibo", "https://www.whiskas.it/sites/g/files/fnmzdf2106/files/2022-11/MicrosoftTeams-image%20%2811%29.png");
 // var_dump(new Product("croccantini", 9.89, "https://www.whiskas.it/sites/g/files/fnmzdf2106/files/2022-11/MicrosoftTeams-image%20%2811%29.png", ))
 
