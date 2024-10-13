@@ -4,7 +4,7 @@
         public $ingredient;
         public $weight;
 
-        public function __construct(array $ingredient, float $weight, string $name, float $price, string $imgUrl, Category $category, int $numberInStock){
+        public function __construct(string $ingredient, float $weight, string $name, float $price, string $imgUrl, Category $category, int $numberInStock){
             $this->ingredient = $ingredient;
             $this->weight = $weight;
             parent::__construct($name, $price, $imgUrl, $category, $numberInStock);
